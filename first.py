@@ -10,21 +10,38 @@
 
 #fibbonacci sequence using recursion#
 
-n = int(input("enter the number"))
-def fibbo(n):
-    if n<=1:
+# n = int(input("enter the number"))
+# def fibbo(n):
+#     if n<=1:
        
-        return n
+#         return n
 
-    else:
-        return (fibbo(n-1)+fibbo(n-2))
+#     else:
+#         return (fibbo(n-1)+fibbo(n-2))
 
-if n<=0:
-    print("enter the valid number")
-else:
-    print("Fibonacci sequence is :")
-    for i in range(n):
-        print(fibbo(i) , end=" ")
+# if n<=0:
+#     print("enter the valid number")
+# else:
+#     print("Fibonacci sequence is :")
+#     for i in range(n):
+#         print(fibbo(i) , end=" ")
+
+
+#finding factorial of entered number
+n = int(input("enter the number"))
+mul=1
+for i in range(1,n+1):
+    mul =i*mul
+
+
+print(mul)
+
+
+
+
+
+
+
 
 
         
