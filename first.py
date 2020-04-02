@@ -28,14 +28,26 @@
 
 
 #finding factorial of entered number
+
+# n = int(input("enter the number"))
+# mul=1
+# for i in range(1,n+1):
+#     mul =i*mul
+
+
+# print(mul)
+
+#finding the factorials by using recursion
+
 n = int(input("enter the number"))
-mul=1
-for i in range(1,n+1):
-    mul =i*mul
 
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
 
-print(mul)
-
+print(fact(n))
 
 
 
